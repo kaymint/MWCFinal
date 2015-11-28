@@ -37,3 +37,4 @@ Add Purchase
 http://localhost/mobile-web/MWCFinal/model/book.php?cmd=3&user=1&bk=2&cost=23
 
 View Purchase
+http://localhost/mobile-web/MWCFinal/model/book.php?cmd=8&user=1
