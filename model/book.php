@@ -98,7 +98,7 @@
 
 
         function purchase_book($book, $user, $cost){
-            $str_query = "INSERT into mwc_purchases SET
+            $str_query = "INSERT into mwc_book_purchases SET
                    book_id = $book,
                    date = CURDATE(),
                    cost = $cost,

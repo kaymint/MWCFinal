@@ -31,3 +31,9 @@ http://localhost/mobile-web/MWCFinal/model/book.php?cmd=6&id=2
 
 
 Search review by book
+http://localhost/mobile-web/MWCFinal/model/book.php?cmd=7&book=ant
+
+Add Purchase
+http://localhost/mobile-web/MWCFinal/model/book.php?cmd=3&user=1&bk=2&cost=23
+
+View Purchase
