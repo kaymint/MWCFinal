@@ -1,0 +1,33 @@
+Users
+http://localhost/mobile-web/MWCFinal/model/user.php?cmd=2&user=Kenneth%20Mintah%20Mensah&pass=kaymint
+
+http://localhost/mobile-web/MWCFinal/model/user.php?cmd=1&user=Kenneth%20Mintah%20Mensah&pass=kaymint&email=kenneth.mensah@ashesi.edu.gh
+
+
+Book
+
+Add Book
+http://localhost/mobile-web/MWCFinal/model/book.php?cmd=1&title=Akingo&author=Achebe%20Jr&price=34&yr=1987&desc=sth%20sth&isbn=123-344
+
+
+View Books
+http://localhost/mobile-web/MWCFinal/model/book.php?cmd=9
+
+
+Search Book by Name or Author
+http://localhost/mobile-web/MWCFinal/model/book.php?cmd=5&st=ant
+
+
+Get Book by Id
+http://localhost/mobile-web/MWCFinal/model/book.php?cmd=4&id=2
+
+
+Add Review
+http://localhost/mobile-web/MWCFinal/model/book.php?cmd=2&review=An%20excellent%20portrayal%20of%20disctatorship%20in%20microcosm&bk=1&reviewer=1
+
+
+Get Book Review by book Id
+http://localhost/mobile-web/MWCFinal/model/book.php?cmd=6&id=2
+
+
+Search review by book

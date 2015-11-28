@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="MySQL - mobile_web@localhost" uuid="202a1b3b-5321-4970-9e62-c91a180ccfcd">
+    <database-info product="MySQL" version="5.6.21" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.35 ( Revision: 5fb9c5849535c13917c2cf9baaece6ef9693ef27 )">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="mixed" quoted-identifiers="upper"/>
+    <database-model serializer="dbm" rdbms="MYSQL" format-version="2.2">
+      <schema id="1" name="mobile_web"/>
+      <table id="2" parent="1" name="meter_reading"/>
+      <table id="3" parent="1" name="mwc_book_purchases"/>
+      <table id="4" parent="1" name="mwc_book_users"/>
+      <table id="5" parent="1" name="mwc_books"/>
+      <table id="6" parent="1" name="mwc_reservation"/>
+      <table id="7" parent="1" name="mwc_reviews"/>
+      <table id="8" parent="1" name="onga_mwc_meals"/>
+      <table id="9" parent="1" name="onga_mwc_orders"/>
+      <table id="10" parent="1" name="onga_mwc_users"/>
+      <table id="11" parent="1" name="otp"/>
+      <table id="12" parent="1" name="ratings"/>
+      <table id="13" parent="1" name="registration"/>
+      <table id="14" parent="1" name="registration_android"/>
+      <column id="15" parent="2" name="reading">
+        <mandatory>1</mandatory>
+        <data-type>varchar(200)</data-type>
+      </column>
+      <column id="16" parent="2" name="meter_code">
+        <mandatory>1</mandatory>
+        <data-type>varchar(200)</data-type>
+      </column>
+      <key id="17" parent="2" name="PRIMARY">
+        <columns>meter_code</columns>
+        <primary>1</primary>
+      </key>
+      <column id="18" parent="3" name="book_id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="19" parent="3" name="user_id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="20" parent="3" name="cost">
+        <mandatory>1</mandatory>
+        <data-type>float</data-type>
+      </column>
+      <column id="21" parent="3" name="date">
+        <mandatory>1</mandatory>
+        <data-type>date</data-type>
+      </column>
+      <column id="22" parent="4" name="username">
+        <mandatory>1</mandatory>
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="23" parent="4" name="password">
+        <mandatory>1</mandatory>
+        <data-type>varchar(200)</data-type>
+      </column>
+      <column id="24" parent="4" name="email">
+        <data-type>varchar(100)</data-type>
+      </column>
+      <key id="25" parent="4" name="PRIMARY">
+        <columns>username</columns>
+        <primary>1</primary>
+      </key>
+      <column id="26" parent="5" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="27" parent="5" name="title">
+        <mandatory>1</mandatory>
+        <data-type>varchar(150)</data-type>
+      </column>
+      <column id="28" parent="5" name="author">
+        <mandatory>1</mandatory>
+        <data-type>varchar(200)</data-type>
+      </column>
+      <column id="29" parent="5" name="desc">
+        <mandatory>1</mandatory>
+        <data-type>varchar(400)</data-type>
+      </column>
+      <column id="30" parent="5" name="isbn">
+        <mandatory>1</mandatory>
+        <data-type>varchar(15)</data-type>
+      </column>
+      <column id="31" parent="5" name="year">
+        <mandatory>1</mandatory>
+        <data-type>year(4)</data-type>
+      </column>
+      <column id="32" parent="5" name="price">
+        <mandatory>1</mandatory>
+        <data-type>float</data-type>
+      </column>
+      <key id="33" parent="5" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="34" parent="6" name="res_id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="35" parent="6" name="reservation_name">
+        <mandatory>1</mandatory>
+        <data-type>varchar(100)</data-type>
+      </column>
+      <column id="36" parent="6" name="number_of_people">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="37" parent="6" name="time">
+        <mandatory>1</mandatory>
+        <data-type>time</data-type>
+      </column>
+      <column id="38" parent="6" name="tables">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="39" parent="6" name="date">
+        <mandatory>1</mandatory>
+        <data-type>date</data-type>
+      </column>
+      <column id="40" parent="6" name="phone">
+        <mandatory>1</mandatory>
+        <data-type>varchar(14)</data-type>
+      </column>
+      <column id="41" parent="6" name="email">
+        <mandatory>1</mandatory>
+        <data-type>varchar(100)</data-type>
+      </column>
+      <key id="42" parent="6" name="PRIMARY">
+        <columns>res_id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="43" parent="7" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="44" parent="7" name="review">
+        <mandatory>1</mandatory>
+        <data-type>varchar(400)</data-type>
+      </column>
+      <column id="45" parent="7" name="book">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="46" parent="7" name="date">
+        <mandatory>1</mandatory>
+        <data-type>date</data-type>
+      </column>
+      <column id="47" parent="7" name="reviewer">
+        <data-type>int(11)</data-type>
+      </column>
+      <key id="48" parent="7" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="49" parent="8" name="meal_id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="50" parent="8" name="meal_name">
+        <mandatory>1</mandatory>
+        <data-type>varchar(100)</data-type>
+      </column>
+      <column id="51" parent="8" name="meal_price">
+        <mandatory>1</mandatory>
+        <data-type>double(3,2)</data-type>
+      </column>
+      <column id="52" parent="8" name="meal_status">
+        <mandatory>1</mandatory>
+        <data-type>enum(&apos;1&apos;, &apos;0&apos;)</data-type>
+      </column>
+      <key id="53" parent="8" name="PRIMARY">
+        <columns>meal_id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="54" parent="9" name="order_id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="55" parent="9" name="meal_id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="56" parent="9" name="user_id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="57" parent="9" name="order_date">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+      </column>
+      <column id="58" parent="9" name="order_status">
+        <mandatory>1</mandatory>
+        <data-type>enum(&apos;ready&apos;, &apos;not&apos;)</data-type>
+      </column>
+      <key id="59" parent="9" name="PRIMARY">
+        <columns>order_id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="60" parent="10" name="user_id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="61" parent="10" name="username">
+        <mandatory>1</mandatory>
+        <data-type>varchar(100)</data-type>
+      </column>
+      <column id="62" parent="10" name="password">
+        <mandatory>1</mandatory>
+        <data-type>varchar(250)</data-type>
+      </column>
+      <column id="63" parent="10" name="user_type">
+        <mandatory>1</mandatory>
+        <data-type>enum(&apos;customer&apos;, &apos;cafeteria&apos;)</data-type>
+      </column>
+      <column id="64" parent="10" name="user_image">
+        <mandatory>1</mandatory>
+        <data-type>blob</data-type>
+      </column>
+      <column id="65" parent="10" name="user_balance">
+        <mandatory>1</mandatory>
+        <data-type>double(4,2)</data-type>
+      </column>
+      <key id="66" parent="10" name="PRIMARY">
+        <columns>user_id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="67" parent="11" name="passcode">
+        <mandatory>1</mandatory>
+        <data-type>varchar(8)</data-type>
+      </column>
+      <column id="68" parent="11" name="time">
+        <mandatory>1</mandatory>
+        <data-type>time</data-type>
+      </column>
+      <column id="69" parent="12" name="rating_id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="70" parent="12" name="rating">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="71" parent="12" name="comment">
+        <mandatory>1</mandatory>
+        <data-type>varchar(200)</data-type>
+      </column>
+      <column id="72" parent="12" name="date">
+        <mandatory>1</mandatory>
+        <data-type>date</data-type>
+      </column>
+      <key id="73" parent="12" name="PRIMARY">
+        <columns>rating_id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="74" parent="13" name="student_id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="75" parent="13" name="student_name">
+        <mandatory>1</mandatory>
+        <data-type>varchar(100)</data-type>
+      </column>
+      <column id="76" parent="13" name="gpa">
+        <mandatory>1</mandatory>
+        <data-type>double</data-type>
+      </column>
+      <column id="77" parent="13" name="major">
+        <mandatory>1</mandatory>
+        <data-type>varchar(100)</data-type>
+      </column>
+      <column id="78" parent="13" name="phone_no">
+        <mandatory>1</mandatory>
+        <data-type>varchar(50)</data-type>
+      </column>
+      <key id="79" parent="13" name="PRIMARY">
+        <columns>student_id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="80" parent="14" name="name">
+        <mandatory>1</mandatory>
+        <data-type>varchar(150)</data-type>
+      </column>
+      <column id="81" parent="14" name="gpa">
+        <mandatory>1</mandatory>
+        <data-type>float</data-type>
+      </column>
+      <column id="82" parent="14" name="school">
+        <mandatory>1</mandatory>
+        <data-type>varchar(100)</data-type>
+      </column>
+      <column id="83" parent="14" name="year">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="84" parent="14" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="85" parent="14" name="course">
+        <mandatory>1</mandatory>
+        <data-type>varchar(40)</data-type>
+      </column>
+      <key id="86" parent="14" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+    </database-model>
+  </data-source>
+</component>
