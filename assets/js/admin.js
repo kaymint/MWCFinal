@@ -3,4 +3,10 @@ $(document).ready(function(){
         menuWidth: 200, // Default is 240
         edge: 'left',
     });
+
+
 });
+
+function setDetails(){
+    
+}

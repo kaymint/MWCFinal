@@ -2,13 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a6243c52-3c69-4c50-ac89-f7d3d4deaa62" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/book.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/view/signup.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/afire.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/book.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/coffee_book.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/lib_2.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/library.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/jsLinters/jshint.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/signup.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/controllers/clinic_controller.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/controllers/clinic_task_controller.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/controllers/district_task_controller.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/model/admin.php" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.ids" afterPath="$PROJECT_DIR$/.idea/dataSources.ids" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/testURLS" afterPath="$PROJECT_DIR$/model/testURLS" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/admin.js" afterPath="$PROJECT_DIR$/assets/js/admin.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/book.php" afterPath="$PROJECT_DIR$/model/book.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/user.php" afterPath="$PROJECT_DIR$/model/user.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/admin_dashboard.html" afterPath="$PROJECT_DIR$/view/admin_dashboard.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/login.html" afterPath="$PROJECT_DIR$/view/login.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/signup.html" afterPath="$PROJECT_DIR$/view/signup.html" />
     </list>
     <ignored path="MWCFinal.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -97,6 +110,38 @@
       </PATH_ELEMENT>
     </PATH>
   </component>
+  <component name="DockManager">
+    <window id="2">
+      <content type="file-editors">
+        <state>
+          <leaf>
+            <file leaf-file-name="admin.js" pinned="false" current-in-tab="false">
+              <entry file="file://$PROJECT_DIR$/assets/js/admin.js">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state vertical-scroll-proportion="0.0">
+                    <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+                    <folding />
+                  </state>
+                </provider>
+              </entry>
+            </file>
+            <file leaf-file-name="signup.js" pinned="false" current-in-tab="true">
+              <entry file="file://$PROJECT_DIR$/assets/js/signup.js">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state vertical-scroll-proportion="1.4150944">
+                    <caret line="52" column="83" selection-start-line="52" selection-start-column="83" selection-end-line="52" selection-end-column="83" />
+                    <folding>
+                      <element signature="e#0#49#0" expanded="false" />
+                    </folding>
+                  </state>
+                </provider>
+              </entry>
+            </file>
+          </leaf>
+        </state>
+      </content>
+    </window>
+  </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
     <favorites_list name="MWCFinal" />
@@ -106,14 +151,14 @@
       <file leaf-file-name="user.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/model/user.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="24.708334">
-              <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
+            <state vertical-scroll-proportion="-12.958333">
+              <caret line="122" column="0" selection-start-line="122" selection-start-column="0" selection-end-line="122" selection-end-column="0" />
               <folding>
-                <marker date="1448724235000" expanded="true" signature="218:370" placeholder="INSERT into se_users..." />
-                <marker date="1448724235000" expanded="true" signature="598:701" placeholder="UPDATE se_us..." />
-                <marker date="1448724235000" expanded="true" signature="923:1014" placeholder="UPDATE se_us..." />
-                <marker date="1448724235000" expanded="true" signature="1190:1286" placeholder="SELECT * FRO..mwc_book_users..." />
-                <marker date="1448724235000" expanded="true" signature="1421:1476" placeholder="SELECT * FRO..se_users..." />
+                <marker date="1448752001000" expanded="true" signature="218:370" placeholder="INSERT into se_users..." />
+                <marker date="1448752001000" expanded="true" signature="598:701" placeholder="UPDATE se_us..." />
+                <marker date="1448752001000" expanded="true" signature="923:1014" placeholder="UPDATE se_us..." />
+                <marker date="1448752001000" expanded="true" signature="1190:1286" placeholder="SELECT * FRO..mwc_book_users..." />
+                <marker date="1448752001000" expanded="true" signature="1421:1476" placeholder="SELECT * FRO..se_users..." />
               </folding>
             </state>
           </provider>
@@ -123,7 +168,7 @@
         <entry file="file://$PROJECT_DIR$/model/testURLS">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="24" column="10" selection-start-line="24" selection-start-column="10" selection-end-line="24" selection-end-column="10" />
+              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -132,9 +177,14 @@
       <file leaf-file-name="login.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/view/login.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.125">
-              <caret line="13" column="80" selection-start-line="11" selection-start-column="6" selection-end-line="13" selection-end-column="80" />
-              <folding />
+            <state vertical-scroll-proportion="-14.375">
+              <caret line="31" column="31" selection-start-line="31" selection-start-column="31" selection-end-line="31" selection-end-column="31" />
+              <folding>
+                <element signature="n#style#0;n#h6#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#h6#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h6#0;n#div#3;n#div#0;n#form#0;n#div#0;n#div#0;n#span#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#h6#0;n#div#3;n#div#0;n#form#0;n#div#0;n#div#0;n#span#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -142,96 +192,104 @@
       <file leaf-file-name="book.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/model/book.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-13.75">
-              <caret line="391" column="3" selection-start-line="391" selection-start-column="3" selection-end-line="391" selection-end-column="3" />
+            <state vertical-scroll-proportion="223.29167">
+              <caret line="20" column="34" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
               <folding>
                 <element signature="e#6#96#0#PHP" expanded="true" />
-                <marker date="1448749232000" expanded="true" signature="309:445" placeholder="INSERT into mwc_book_users..." />
-                <marker date="1448749232000" expanded="true" signature="309:480" placeholder="INSERT into mwc_books..." />
-                <marker date="1448749232000" expanded="true" signature="309:515" placeholder="INSERT into mwc_books..." />
-                <marker date="1448749232000" expanded="true" signature="309:543" placeholder="INSERT into mwc_books..." />
-                <marker date="1448749232000" expanded="true" signature="309:549" placeholder="INSERT into mwc_books..." />
-                <marker date="1448749232000" expanded="true" signature="741:820" placeholder="UPDATE se_us..." />
-                <marker date="1448749232000" expanded="true" signature="975:1021" placeholder="SELECT * FRO..mwc_book_users..." />
-                <marker date="1448749232000" expanded="true" signature="975:1026" placeholder="SELECT * FRO..mwc_books..." />
-                <marker date="1448749232000" expanded="true" signature="975:1027" placeholder="SELECT * FRO..mwc_book_users..." />
-                <marker date="1448749232000" expanded="true" signature="1145:1168" placeholder="SELECT * FRO..mwc_books..." />
-                <marker date="1448749232000" expanded="true" signature="1289:1335" placeholder="SELECT * FRO..mwc_books..." />
-                <marker date="1448749232000" expanded="true" signature="1289:1354" placeholder="SELECT * FRO..mwc_books..." />
-                <marker date="1448749232000" expanded="true" signature="1289:1368" placeholder="SELECT * FRO..mwc_books..." />
-                <marker date="1448749232000" expanded="true" signature="1289:1376" placeholder="SELECT * FRO..mwc_books..." />
-                <marker date="1448749232000" expanded="true" signature="1545:1681" placeholder="INSERT into mwc_reviews..." />
-                <marker date="1448749232000" expanded="true" signature="1545:1712" placeholder="INSERT into mwc_reviews..." />
-                <marker date="1448749232000" expanded="true" signature="1545:1713" placeholder="INSERT into mwc_reviews..." />
-                <marker date="1448749232000" expanded="true" signature="1916:1979" placeholder="SELECT * FRO..mwc_books..." />
-                <marker date="1448749232000" expanded="true" signature="1916:2006" placeholder="SELECT * FRO..mwc_books..." />
-                <marker date="1448749232000" expanded="true" signature="1916:2007" placeholder="SELECT * FRO..mwc_books..." />
-                <marker date="1448749232000" expanded="true" signature="2210:2304" placeholder="SELECT * FRO..mwc_books..." />
-                <marker date="1448749232000" expanded="true" signature="2210:2313" placeholder="SELECT * FRO..mwc_books..." />
-                <marker date="1448749232000" expanded="true" signature="2454:2624" placeholder="INSERT into mwc_reviews..." />
-                <marker date="1448749232000" expanded="true" signature="2454:2625" placeholder="INSERT into mwc_reviews..." />
-                <marker date="1448749232000" expanded="true" signature="2454:2676" placeholder="INSERT into mwc_reviews..." />
-                <marker date="1448749232000" expanded="true" signature="2755:2859" placeholder="SELECT * FRO..mwc_books..." />
-                <marker date="1448749232000" expanded="true" signature="2755:2863" placeholder="SELECT * FRO..mwc_books..." />
-                <marker date="1448749232000" expanded="true" signature="2755:2883" placeholder="SELECT * FRO..mwc_books..." />
+                <marker date="1448754711000" expanded="true" signature="309:445" placeholder="INSERT into mwc_book_users..." />
+                <marker date="1448754711000" expanded="true" signature="309:480" placeholder="INSERT into mwc_books..." />
+                <marker date="1448754711000" expanded="true" signature="309:515" placeholder="INSERT into mwc_books..." />
+                <marker date="1448754711000" expanded="true" signature="309:543" placeholder="INSERT into mwc_books..." />
+                <marker date="1448754711000" expanded="true" signature="309:549" placeholder="INSERT into mwc_books..." />
+                <marker date="1448754711000" expanded="true" signature="741:820" placeholder="UPDATE se_us..." />
+                <marker date="1448754711000" expanded="true" signature="975:1021" placeholder="SELECT * FRO..mwc_book_users..." />
+                <marker date="1448754711000" expanded="true" signature="975:1026" placeholder="SELECT * FRO..mwc_books..." />
+                <marker date="1448754711000" expanded="true" signature="975:1027" placeholder="SELECT * FRO..mwc_book_users..." />
+                <marker date="1448754711000" expanded="true" signature="1145:1168" placeholder="SELECT * FRO..mwc_books..." />
+                <marker date="1448754711000" expanded="true" signature="1289:1335" placeholder="SELECT * FRO..mwc_books..." />
+                <marker date="1448754711000" expanded="true" signature="1289:1354" placeholder="SELECT * FRO..mwc_books..." />
+                <marker date="1448754711000" expanded="true" signature="1289:1368" placeholder="SELECT * FRO..mwc_books..." />
+                <marker date="1448754711000" expanded="true" signature="1289:1376" placeholder="SELECT * FRO..mwc_books..." />
+                <marker date="1448754711000" expanded="true" signature="1545:1681" placeholder="INSERT into mwc_reviews..." />
+                <marker date="1448754711000" expanded="true" signature="1545:1712" placeholder="INSERT into mwc_reviews..." />
+                <marker date="1448754711000" expanded="true" signature="1545:1713" placeholder="INSERT into mwc_reviews..." />
+                <marker date="1448754711000" expanded="true" signature="1545:1714" placeholder="INSERT into mwc_reviews..." />
+                <marker date="1448754711000" expanded="true" signature="1545:1723" placeholder="INSERT into mwc_reviews..." />
+                <marker date="1448754711000" expanded="true" signature="1918:1981" placeholder="SELECT * FRO..mwc_books..." />
+                <marker date="1448754711000" expanded="true" signature="1918:2008" placeholder="SELECT * FRO..mwc_books..." />
+                <marker date="1448754711000" expanded="true" signature="1918:2009" placeholder="SELECT * FRO..mwc_books..." />
+                <marker date="1448754711000" expanded="true" signature="2212:2306" placeholder="SELECT * FRO..mwc_books..." />
+                <marker date="1448754711000" expanded="true" signature="2212:2315" placeholder="SELECT * FRO..mwc_books..." />
+                <marker date="1448754711000" expanded="true" signature="2456:2626" placeholder="INSERT into mwc_reviews..." />
+                <marker date="1448754711000" expanded="true" signature="2456:2627" placeholder="INSERT into mwc_book_purchases..." />
+                <marker date="1448754711000" expanded="true" signature="2456:2628" placeholder="INSERT into mwc_reviews..." />
+                <marker date="1448754711000" expanded="true" signature="2456:2633" placeholder="INSERT into mwc_book_purchases..." />
+                <marker date="1448754711000" expanded="true" signature="2456:2680" placeholder="INSERT into mwc_reviews..." />
+                <marker date="1448754711000" expanded="true" signature="2759:2864" placeholder="SELECT * FRO..mwc_books..." />
+                <marker date="1448754711000" expanded="true" signature="2759:2868" placeholder="SELECT * FRO..mwc_books..." />
+                <marker date="1448754711000" expanded="true" signature="2759:2889" placeholder="SELECT * FRO..mwc_books..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="testBookAPI.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/view/testBookAPI.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-12.791667">
-              <caret line="56" column="2" selection-start-line="56" selection-start-column="2" selection-end-line="56" selection-end-column="2" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="adb.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/model/adb.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.416667">
-              <caret line="104" column="2" selection-start-line="104" selection-start-column="2" selection-end-line="104" selection-end-column="2" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="admin_dashboard.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/view/admin_dashboard.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.0416665">
-              <caret line="57" column="34" selection-start-line="57" selection-start-column="34" selection-end-line="57" selection-end-column="34" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="admin_view.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/view/admin_view.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="20.625">
-              <caret line="47" column="10" selection-start-line="47" selection-start-column="10" selection-end-line="47" selection-end-column="10" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="signup.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/view/signup.html">
+      <file leaf-file-name="jquery-migrate-1.2.1.min.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/js/jquery-migrate-1.2.1.min.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="materialize.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/js/materialize.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-15.0">
+              <caret line="81" column="6" selection-start-line="81" selection-start-column="6" selection-end-line="81" selection-end-column="6" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+                <marker date="1429993982000" expanded="true" signature="139725:139802" placeholder="..." />
+                <marker date="1429993982000" expanded="true" signature="192468:192497" placeholder="..." />
+                <marker date="1429993982000" expanded="true" signature="192758:192768" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="signup.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/view/signup.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-19.375">
+              <caret line="68" column="6" selection-start-line="68" selection-start-column="6" selection-end-line="68" selection-end-column="6" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="admin_dashboard.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/view/admin_dashboard.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.8221344">
+              <caret line="165" column="7" selection-start-line="165" selection-start-column="7" selection-end-line="165" selection-end-column="7" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="book.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/js/book.js">
-          <provider selected="true" editor-type-id="text-editor">
+      <file leaf-file-name="mobile_web.mwc_book_users" pinned="false" current-in-tab="false">
+        <entry file="dbDummy://dbtable:/39aa54e3/202a1b3b-5321-4970-9e62-c91a180ccfcd/mobile_web.mwc_book_users">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+          <provider editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
@@ -256,12 +314,16 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/view/home_page.html" />
-        <option value="$PROJECT_DIR$/model/user.php" />
         <option value="$PROJECT_DIR$/model/adb.php" />
         <option value="$PROJECT_DIR$/view/testBookAPI.html" />
-        <option value="$PROJECT_DIR$/model/book.php" />
         <option value="$PROJECT_DIR$/model/testURLS" />
         <option value="$PROJECT_DIR$/assets/js/book.js" />
+        <option value="$PROJECT_DIR$/model/user.php" />
+        <option value="$PROJECT_DIR$/view/signup.html" />
+        <option value="$PROJECT_DIR$/model/book.php" />
+        <option value="$PROJECT_DIR$/assets/js/admin.js" />
+        <option value="$PROJECT_DIR$/view/login.html" />
+        <option value="$PROJECT_DIR$/assets/js/signup.js" />
         <option value="$PROJECT_DIR$/view/admin_dashboard.html" />
       </list>
     </option>
@@ -278,10 +340,10 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="45" />
-    <option name="y" value="23" />
-    <option name="width" value="1157" />
-    <option name="height" value="753" />
+    <option name="x" value="38" />
+    <option name="y" value="68" />
+    <option name="width" value="1194" />
+    <option name="height" value="746" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -390,6 +452,24 @@
               <option name="myItemId" value="assets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="img" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MWCFinal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MWCFinal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
@@ -406,6 +486,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/assets/img" />
       <recent name="$PROJECT_DIR$/view" />
     </key>
   </component>
@@ -456,11 +537,17 @@
       <option name="project" value="LOCAL" />
       <updated>1448749416044</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="added signup">
+      <created>1448750900701</created>
+      <option name="number" value="00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1448750900701</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="45" y="23" width="1157" height="753" extended-state="0" />
+    <frame x="38" y="68" width="1194" height="746" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -470,9 +557,9 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2735426" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11023622" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31944445" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20572917" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11146497" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -489,7 +576,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added Files" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Files" />
+    <MESSAGE value="added signup" />
+    <option name="LAST_COMMIT_MESSAGE" value="added signup" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -503,11 +591,11 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="110" column="1" selection-start-line="0" selection-start-column="0" selection-end-line="157" selection-end-column="0" />
           <folding>
-            <marker date="1448724235000" expanded="true" signature="218:370" placeholder="INSERT into se_users..." />
-            <marker date="1448724235000" expanded="true" signature="598:701" placeholder="UPDATE se_us..." />
-            <marker date="1448724235000" expanded="true" signature="923:1014" placeholder="UPDATE se_us..." />
-            <marker date="1448724235000" expanded="true" signature="1190:1286" placeholder="SELECT * FRO..mwc_book_users..." />
-            <marker date="1448724235000" expanded="true" signature="1421:1476" placeholder="SELECT * FRO..se_users..." />
+            <marker date="1448752001000" expanded="true" signature="218:370" placeholder="INSERT into se_users..." />
+            <marker date="1448752001000" expanded="true" signature="598:701" placeholder="UPDATE se_us..." />
+            <marker date="1448752001000" expanded="true" signature="923:1014" placeholder="UPDATE se_us..." />
+            <marker date="1448752001000" expanded="true" signature="1190:1286" placeholder="SELECT * FRO..mwc_book_users..." />
+            <marker date="1448752001000" expanded="true" signature="1421:1476" placeholder="SELECT * FRO..se_users..." />
           </folding>
         </state>
       </provider>
@@ -524,7 +612,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="n#style#0;n#h6#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#h6#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h6#0;n#div#3;n#div#0;n#form#0;n#div#0;n#div#0;n#span#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#h6#0;n#div#3;n#div#0;n#form#0;n#div#0;n#div#0;n#span#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -534,34 +627,38 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#6#96#0#PHP" expanded="true" />
-            <marker date="1448749232000" expanded="true" signature="309:445" placeholder="INSERT into mwc_book_users..." />
-            <marker date="1448749232000" expanded="true" signature="309:480" placeholder="INSERT into mwc_books..." />
-            <marker date="1448749232000" expanded="true" signature="309:515" placeholder="INSERT into mwc_books..." />
-            <marker date="1448749232000" expanded="true" signature="309:543" placeholder="INSERT into mwc_books..." />
-            <marker date="1448749232000" expanded="true" signature="309:549" placeholder="INSERT into mwc_books..." />
-            <marker date="1448749232000" expanded="true" signature="741:820" placeholder="UPDATE se_us..." />
-            <marker date="1448749232000" expanded="true" signature="975:1021" placeholder="SELECT * FRO..mwc_book_users..." />
-            <marker date="1448749232000" expanded="true" signature="975:1026" placeholder="SELECT * FRO..mwc_books..." />
-            <marker date="1448749232000" expanded="true" signature="975:1027" placeholder="SELECT * FRO..mwc_book_users..." />
-            <marker date="1448749232000" expanded="true" signature="1145:1168" placeholder="SELECT * FRO..mwc_books..." />
-            <marker date="1448749232000" expanded="true" signature="1289:1335" placeholder="SELECT * FRO..mwc_books..." />
-            <marker date="1448749232000" expanded="true" signature="1289:1354" placeholder="SELECT * FRO..mwc_books..." />
-            <marker date="1448749232000" expanded="true" signature="1289:1368" placeholder="SELECT * FRO..mwc_books..." />
-            <marker date="1448749232000" expanded="true" signature="1289:1376" placeholder="SELECT * FRO..mwc_books..." />
-            <marker date="1448749232000" expanded="true" signature="1545:1681" placeholder="INSERT into mwc_reviews..." />
-            <marker date="1448749232000" expanded="true" signature="1545:1712" placeholder="INSERT into mwc_reviews..." />
-            <marker date="1448749232000" expanded="true" signature="1545:1713" placeholder="INSERT into mwc_reviews..." />
-            <marker date="1448749232000" expanded="true" signature="1916:1979" placeholder="SELECT * FRO..mwc_books..." />
-            <marker date="1448749232000" expanded="true" signature="1916:2006" placeholder="SELECT * FRO..mwc_books..." />
-            <marker date="1448749232000" expanded="true" signature="1916:2007" placeholder="SELECT * FRO..mwc_books..." />
-            <marker date="1448749232000" expanded="true" signature="2210:2304" placeholder="SELECT * FRO..mwc_books..." />
-            <marker date="1448749232000" expanded="true" signature="2210:2313" placeholder="SELECT * FRO..mwc_books..." />
-            <marker date="1448749232000" expanded="true" signature="2454:2624" placeholder="INSERT into mwc_reviews..." />
-            <marker date="1448749232000" expanded="true" signature="2454:2625" placeholder="INSERT into mwc_reviews..." />
-            <marker date="1448749232000" expanded="true" signature="2454:2676" placeholder="INSERT into mwc_reviews..." />
-            <marker date="1448749232000" expanded="true" signature="2755:2859" placeholder="SELECT * FRO..mwc_books..." />
-            <marker date="1448749232000" expanded="true" signature="2755:2863" placeholder="SELECT * FRO..mwc_books..." />
-            <marker date="1448749232000" expanded="true" signature="2755:2883" placeholder="SELECT * FRO..mwc_books..." />
+            <marker date="1448754711000" expanded="true" signature="309:445" placeholder="INSERT into mwc_book_users..." />
+            <marker date="1448754711000" expanded="true" signature="309:480" placeholder="INSERT into mwc_books..." />
+            <marker date="1448754711000" expanded="true" signature="309:515" placeholder="INSERT into mwc_books..." />
+            <marker date="1448754711000" expanded="true" signature="309:543" placeholder="INSERT into mwc_books..." />
+            <marker date="1448754711000" expanded="true" signature="309:549" placeholder="INSERT into mwc_books..." />
+            <marker date="1448754711000" expanded="true" signature="741:820" placeholder="UPDATE se_us..." />
+            <marker date="1448754711000" expanded="true" signature="975:1021" placeholder="SELECT * FRO..mwc_book_users..." />
+            <marker date="1448754711000" expanded="true" signature="975:1026" placeholder="SELECT * FRO..mwc_books..." />
+            <marker date="1448754711000" expanded="true" signature="975:1027" placeholder="SELECT * FRO..mwc_book_users..." />
+            <marker date="1448754711000" expanded="true" signature="1145:1168" placeholder="SELECT * FRO..mwc_books..." />
+            <marker date="1448754711000" expanded="true" signature="1289:1335" placeholder="SELECT * FRO..mwc_books..." />
+            <marker date="1448754711000" expanded="true" signature="1289:1354" placeholder="SELECT * FRO..mwc_books..." />
+            <marker date="1448754711000" expanded="true" signature="1289:1368" placeholder="SELECT * FRO..mwc_books..." />
+            <marker date="1448754711000" expanded="true" signature="1289:1376" placeholder="SELECT * FRO..mwc_books..." />
+            <marker date="1448754711000" expanded="true" signature="1545:1681" placeholder="INSERT into mwc_reviews..." />
+            <marker date="1448754711000" expanded="true" signature="1545:1712" placeholder="INSERT into mwc_reviews..." />
+            <marker date="1448754711000" expanded="true" signature="1545:1713" placeholder="INSERT into mwc_reviews..." />
+            <marker date="1448754711000" expanded="true" signature="1545:1714" placeholder="INSERT into mwc_reviews..." />
+            <marker date="1448754711000" expanded="true" signature="1545:1723" placeholder="INSERT into mwc_reviews..." />
+            <marker date="1448754711000" expanded="true" signature="1918:1981" placeholder="SELECT * FRO..mwc_books..." />
+            <marker date="1448754711000" expanded="true" signature="1918:2008" placeholder="SELECT * FRO..mwc_books..." />
+            <marker date="1448754711000" expanded="true" signature="1918:2009" placeholder="SELECT * FRO..mwc_books..." />
+            <marker date="1448754711000" expanded="true" signature="2212:2306" placeholder="SELECT * FRO..mwc_books..." />
+            <marker date="1448754711000" expanded="true" signature="2212:2315" placeholder="SELECT * FRO..mwc_books..." />
+            <marker date="1448754711000" expanded="true" signature="2456:2626" placeholder="INSERT into mwc_reviews..." />
+            <marker date="1448754711000" expanded="true" signature="2456:2627" placeholder="INSERT into mwc_book_purchases..." />
+            <marker date="1448754711000" expanded="true" signature="2456:2628" placeholder="INSERT into mwc_reviews..." />
+            <marker date="1448754711000" expanded="true" signature="2456:2633" placeholder="INSERT into mwc_book_purchases..." />
+            <marker date="1448754711000" expanded="true" signature="2456:2680" placeholder="INSERT into mwc_reviews..." />
+            <marker date="1448754711000" expanded="true" signature="2759:2864" placeholder="SELECT * FRO..mwc_books..." />
+            <marker date="1448754711000" expanded="true" signature="2759:2868" placeholder="SELECT * FRO..mwc_books..." />
+            <marker date="1448754711000" expanded="true" signature="2759:2889" placeholder="SELECT * FRO..mwc_books..." />
           </folding>
         </state>
       </provider>
@@ -575,14 +672,6 @@
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/clinic_controller.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="68" column="18" selection-start-line="60" selection-start-column="8" selection-end-line="68" selection-end-column="18" />
           <folding />
         </state>
       </provider>
@@ -646,33 +735,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/clinic_controller.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="68" column="18" selection-start-line="60" selection-start-column="8" selection-end-line="68" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/model/adb.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-8.416667">
           <caret line="104" column="2" selection-start-line="104" selection-start-column="2" selection-end-line="104" selection-end-column="2" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/model/user.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="24.708334">
-          <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
-          <folding>
-            <marker date="1448724235000" expanded="true" signature="218:370" placeholder="INSERT into se_users..." />
-            <marker date="1448724235000" expanded="true" signature="598:701" placeholder="UPDATE se_us..." />
-            <marker date="1448724235000" expanded="true" signature="923:1014" placeholder="UPDATE se_us..." />
-            <marker date="1448724235000" expanded="true" signature="1190:1286" placeholder="SELECT * FRO..mwc_book_users..." />
-            <marker date="1448724235000" expanded="true" signature="1421:1476" placeholder="SELECT * FRO..se_users..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -689,80 +756,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/view/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.125">
-          <caret line="13" column="80" selection-start-line="11" selection-start-column="6" selection-end-line="13" selection-end-column="80" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/view/testBookAPI.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-12.791667">
           <caret line="56" column="2" selection-start-line="56" selection-start-column="2" selection-end-line="56" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/model/testURLS">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="24" column="10" selection-start-line="24" selection-start-column="10" selection-end-line="24" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/model/book.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.75">
-          <caret line="391" column="3" selection-start-line="391" selection-start-column="3" selection-end-line="391" selection-end-column="3" />
-          <folding>
-            <element signature="e#6#96#0#PHP" expanded="true" />
-            <marker date="1448749232000" expanded="true" signature="309:445" placeholder="INSERT into mwc_book_users..." />
-            <marker date="1448749232000" expanded="true" signature="309:480" placeholder="INSERT into mwc_books..." />
-            <marker date="1448749232000" expanded="true" signature="309:515" placeholder="INSERT into mwc_books..." />
-            <marker date="1448749232000" expanded="true" signature="309:543" placeholder="INSERT into mwc_books..." />
-            <marker date="1448749232000" expanded="true" signature="309:549" placeholder="INSERT into mwc_books..." />
-            <marker date="1448749232000" expanded="true" signature="741:820" placeholder="UPDATE se_us..." />
-            <marker date="1448749232000" expanded="true" signature="975:1021" placeholder="SELECT * FRO..mwc_book_users..." />
-            <marker date="1448749232000" expanded="true" signature="975:1026" placeholder="SELECT * FRO..mwc_books..." />
-            <marker date="1448749232000" expanded="true" signature="975:1027" placeholder="SELECT * FRO..mwc_book_users..." />
-            <marker date="1448749232000" expanded="true" signature="1145:1168" placeholder="SELECT * FRO..mwc_books..." />
-            <marker date="1448749232000" expanded="true" signature="1289:1335" placeholder="SELECT * FRO..mwc_books..." />
-            <marker date="1448749232000" expanded="true" signature="1289:1354" placeholder="SELECT * FRO..mwc_books..." />
-            <marker date="1448749232000" expanded="true" signature="1289:1368" placeholder="SELECT * FRO..mwc_books..." />
-            <marker date="1448749232000" expanded="true" signature="1289:1376" placeholder="SELECT * FRO..mwc_books..." />
-            <marker date="1448749232000" expanded="true" signature="1545:1681" placeholder="INSERT into mwc_reviews..." />
-            <marker date="1448749232000" expanded="true" signature="1545:1712" placeholder="INSERT into mwc_reviews..." />
-            <marker date="1448749232000" expanded="true" signature="1545:1713" placeholder="INSERT into mwc_reviews..." />
-            <marker date="1448749232000" expanded="true" signature="1916:1979" placeholder="SELECT * FRO..mwc_books..." />
-            <marker date="1448749232000" expanded="true" signature="1916:2006" placeholder="SELECT * FRO..mwc_books..." />
-            <marker date="1448749232000" expanded="true" signature="1916:2007" placeholder="SELECT * FRO..mwc_books..." />
-            <marker date="1448749232000" expanded="true" signature="2210:2304" placeholder="SELECT * FRO..mwc_books..." />
-            <marker date="1448749232000" expanded="true" signature="2210:2313" placeholder="SELECT * FRO..mwc_books..." />
-            <marker date="1448749232000" expanded="true" signature="2454:2624" placeholder="INSERT into mwc_reviews..." />
-            <marker date="1448749232000" expanded="true" signature="2454:2625" placeholder="INSERT into mwc_reviews..." />
-            <marker date="1448749232000" expanded="true" signature="2454:2676" placeholder="INSERT into mwc_reviews..." />
-            <marker date="1448749232000" expanded="true" signature="2755:2859" placeholder="SELECT * FRO..mwc_books..." />
-            <marker date="1448749232000" expanded="true" signature="2755:2863" placeholder="SELECT * FRO..mwc_books..." />
-            <marker date="1448749232000" expanded="true" signature="2755:2883" placeholder="SELECT * FRO..mwc_books..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/book.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view/admin_dashboard.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.0416665">
-          <caret line="57" column="34" selection-start-line="57" selection-start-column="34" selection-end-line="57" selection-end-column="34" />
           <folding />
         </state>
       </provider>
@@ -775,10 +772,218 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/view/signup.html">
+    <entry file="file://$PROJECT_DIR$/assets/js/rickshaw.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/spin.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/book.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/bootstrap.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/ec2c8835c9f9fbb7b8cd36464b491e73.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1448240582000" expanded="true" signature="71747:71790" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/jquery.autosize.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/jquery.knob.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/jquery-migrate-1.2.1.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/materialize.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-15.0">
+          <caret line="81" column="6" selection-start-line="81" selection-start-column="6" selection-end-line="81" selection-end-column="6" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <marker date="1429993982000" expanded="true" signature="139725:139802" placeholder="..." />
+            <marker date="1429993982000" expanded="true" signature="192468:192497" placeholder="..." />
+            <marker date="1429993982000" expanded="true" signature="192758:192768" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/book.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="223.29167">
+          <caret line="20" column="34" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
+          <folding>
+            <element signature="e#6#96#0#PHP" expanded="true" />
+            <marker date="1448754711000" expanded="true" signature="309:445" placeholder="INSERT into mwc_book_users..." />
+            <marker date="1448754711000" expanded="true" signature="309:480" placeholder="INSERT into mwc_books..." />
+            <marker date="1448754711000" expanded="true" signature="309:515" placeholder="INSERT into mwc_books..." />
+            <marker date="1448754711000" expanded="true" signature="309:543" placeholder="INSERT into mwc_books..." />
+            <marker date="1448754711000" expanded="true" signature="309:549" placeholder="INSERT into mwc_books..." />
+            <marker date="1448754711000" expanded="true" signature="741:820" placeholder="UPDATE se_us..." />
+            <marker date="1448754711000" expanded="true" signature="975:1021" placeholder="SELECT * FRO..mwc_book_users..." />
+            <marker date="1448754711000" expanded="true" signature="975:1026" placeholder="SELECT * FRO..mwc_books..." />
+            <marker date="1448754711000" expanded="true" signature="975:1027" placeholder="SELECT * FRO..mwc_book_users..." />
+            <marker date="1448754711000" expanded="true" signature="1145:1168" placeholder="SELECT * FRO..mwc_books..." />
+            <marker date="1448754711000" expanded="true" signature="1289:1335" placeholder="SELECT * FRO..mwc_books..." />
+            <marker date="1448754711000" expanded="true" signature="1289:1354" placeholder="SELECT * FRO..mwc_books..." />
+            <marker date="1448754711000" expanded="true" signature="1289:1368" placeholder="SELECT * FRO..mwc_books..." />
+            <marker date="1448754711000" expanded="true" signature="1289:1376" placeholder="SELECT * FRO..mwc_books..." />
+            <marker date="1448754711000" expanded="true" signature="1545:1681" placeholder="INSERT into mwc_reviews..." />
+            <marker date="1448754711000" expanded="true" signature="1545:1712" placeholder="INSERT into mwc_reviews..." />
+            <marker date="1448754711000" expanded="true" signature="1545:1713" placeholder="INSERT into mwc_reviews..." />
+            <marker date="1448754711000" expanded="true" signature="1545:1714" placeholder="INSERT into mwc_reviews..." />
+            <marker date="1448754711000" expanded="true" signature="1545:1723" placeholder="INSERT into mwc_reviews..." />
+            <marker date="1448754711000" expanded="true" signature="1918:1981" placeholder="SELECT * FRO..mwc_books..." />
+            <marker date="1448754711000" expanded="true" signature="1918:2008" placeholder="SELECT * FRO..mwc_books..." />
+            <marker date="1448754711000" expanded="true" signature="1918:2009" placeholder="SELECT * FRO..mwc_books..." />
+            <marker date="1448754711000" expanded="true" signature="2212:2306" placeholder="SELECT * FRO..mwc_books..." />
+            <marker date="1448754711000" expanded="true" signature="2212:2315" placeholder="SELECT * FRO..mwc_books..." />
+            <marker date="1448754711000" expanded="true" signature="2456:2626" placeholder="INSERT into mwc_reviews..." />
+            <marker date="1448754711000" expanded="true" signature="2456:2627" placeholder="INSERT into mwc_book_purchases..." />
+            <marker date="1448754711000" expanded="true" signature="2456:2628" placeholder="INSERT into mwc_reviews..." />
+            <marker date="1448754711000" expanded="true" signature="2456:2633" placeholder="INSERT into mwc_book_purchases..." />
+            <marker date="1448754711000" expanded="true" signature="2456:2680" placeholder="INSERT into mwc_reviews..." />
+            <marker date="1448754711000" expanded="true" signature="2759:2864" placeholder="SELECT * FRO..mwc_books..." />
+            <marker date="1448754711000" expanded="true" signature="2759:2868" placeholder="SELECT * FRO..mwc_books..." />
+            <marker date="1448754711000" expanded="true" signature="2759:2889" placeholder="SELECT * FRO..mwc_books..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/admin.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/user.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.958333">
+          <caret line="122" column="0" selection-start-line="122" selection-start-column="0" selection-end-line="122" selection-end-column="0" />
+          <folding>
+            <marker date="1448752001000" expanded="true" signature="218:370" placeholder="INSERT into se_users..." />
+            <marker date="1448752001000" expanded="true" signature="598:701" placeholder="UPDATE se_us..." />
+            <marker date="1448752001000" expanded="true" signature="923:1014" placeholder="UPDATE se_us..." />
+            <marker date="1448752001000" expanded="true" signature="1190:1286" placeholder="SELECT * FRO..mwc_book_users..." />
+            <marker date="1448752001000" expanded="true" signature="1421:1476" placeholder="SELECT * FRO..se_users..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/testURLS">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/39aa54e3/202a1b3b-5321-4970-9e62-c91a180ccfcd/mobile_web.mwc_book_users">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-14.375">
+          <caret line="31" column="31" selection-start-line="31" selection-start-column="31" selection-end-line="31" selection-end-column="31" />
+          <folding>
+            <element signature="n#style#0;n#h6#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#h6#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h6#0;n#div#3;n#div#0;n#form#0;n#div#0;n#div#0;n#span#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#h6#0;n#div#3;n#div#0;n#form#0;n#div#0;n#div#0;n#span#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/signup.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-19.375">
+          <caret line="68" column="6" selection-start-line="68" selection-start-column="6" selection-end-line="68" selection-end-column="6" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/signup.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.4150944">
+          <caret line="52" column="83" selection-start-line="52" selection-start-column="83" selection-end-line="52" selection-end-column="83" />
+          <folding>
+            <element signature="e#0#49#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/img/afire.jpeg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/admin_dashboard.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8221344">
+          <caret line="165" column="7" selection-start-line="165" selection-start-column="7" selection-end-line="165" selection-end-column="7" />
           <folding />
         </state>
       </provider>

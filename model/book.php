@@ -68,7 +68,7 @@
                    review = '$review',
                    book = $book,
                    date = CURDATE(),
-                   reviewer = $reviewer";
+                   reviewer = '$reviewer'";
 
             return $this->query($str_query);
         }
@@ -102,7 +102,7 @@
                    book_id = $book,
                    date = CURDATE(),
                    cost = $cost,
-                   user_id = $user";
+                   user_id = '$user'";
 
             return $this->query($str_query);
         }
@@ -110,7 +110,7 @@
 
         function get_purchases($user){
             $str_query = "SELECT * FROM mwc_books B, mwc_book_purchases P
-                WHERE P.book_id = B.id AND P.user_id = $user  ORDER BY DATE DESC";
+                WHERE P.book_id = B.id AND P.user_id = '$user'  ORDER BY DATE DESC";
 
             return $this->query($str_query);
         }

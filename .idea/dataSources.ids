@@ -39,7 +39,7 @@
       </column>
       <column id="19" parent="3" name="user_id">
         <mandatory>1</mandatory>
-        <data-type>int(11)</data-type>
+        <data-type>varchar(20)</data-type>
       </column>
       <column id="20" parent="3" name="cost">
         <mandatory>1</mandatory>
@@ -152,7 +152,7 @@
         <data-type>date</data-type>
       </column>
       <column id="48" parent="7" name="reviewer">
-        <data-type>int(11)</data-type>
+        <data-type>varchar(50)</data-type>
       </column>
       <key id="49" parent="7" name="PRIMARY">
         <columns>review_id</columns>

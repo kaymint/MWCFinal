@@ -100,7 +100,7 @@ function signup_control(){
         if ($obj->add_user($username, $password, $email)){
 
             echo '{"result":1,"username": "'.$username.'",
-                    "email": "'.$username.'"}';
+                    "email": "'.$email.'"}';
         }
         else
         {
