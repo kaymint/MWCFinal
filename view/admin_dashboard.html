@@ -15,12 +15,6 @@
     <!--Font awesome -->
     <link rel="stylesheet" href="../assets/css/css/font-awesome.min.css">
 
-    <!--&lt;!&ndash;Import bootstrap &ndash;&gt;-->
-    <!--<link type="text/css" rel="stylesheet" href="../assets/css/bootstrap.css">-->
-
-    <!--&lt;!&ndash;Import  materialadmin&ndash;&gt;-->
-    <!--<link type="text/css" rel="stylesheet" href="../assets/css/materialadmin.css">-->
-
     <!--material design iconic font-->
     <link type="text/css" rel="stylesheet" href="../assets/css/css/material-design-iconic-font.css">
 
@@ -31,22 +25,24 @@
 <body id="body_page">
 
     <!-- NAVBAR -->
-    <div class=" row navbar-fixed">
-        <nav class="col s12">
-            <div class="nav-wrapper">
+    <div class=" row navbar-fixed ">
+        <nav class="col s12 blue-grey">
+            <div class="nav-wrapper ">
                 <a href="javascript:void(0)" class="brand-logo center">Logo</a>
                 <ul  class="right hide-on-med-and-down">
-                    <li><a href="javascript:void(0)">Sass</a></li>
-                    <li><a href="javascript:void(0)">Components</a></li>
+                    <li><i class="zmdi zmdi-account-circle circle"></i></li>
+                    <li><span id="username"> </span></li>
                 </ul>
                 <a href="#" data-activates="slide-out" class="button-collapse">
                     <i class="mdi-navigation-menu"></i>
                 </a>
             </div>
         </nav>
+
     </div>
 
     <!-- END NAVBAR -->
+
 
     <!-- CONTENT AND SIDENAV-->
     <div class="row">
@@ -54,79 +50,182 @@
 
 
 
-        <div class="col s12 m12 l10 right">
-            <!-- page content  -->
+        <div class="col s12 m12 l9 right">
 
+            <div class="row" id="search-div">
+                <div class="col s12 container center-align">
+                        <div class="col s1">
+                            <i class="zmdi zmdi-search" id="search_icon"></i></label></div>
+                        <div class="col s11">
+                            <input id="search" type="search" required onkeyup="searchBook()">
+                        </div>
+                </div>
+            </div>
+
+            <!-- page content  -->
+            <div class="row" id="main-div">
+
+            </div>
+
+            <div class="row" id="review-div">
+                <div class="col s12 m12 l5">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="library.jpg">
+                            <span class="card-title">Book Title</span>
+                        </div>
+                        <div class="card-content">
+                            <p>Author</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="#"><i class="zmdi zmdi-money"> </i> Price</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col s12 m12 l7">
+
+                    <div class="card-panel orange-text">
+
+                      <div>Description</div>
+                        <div>ISBN</div>
+                        <div>Year</div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row" >
+                <div class="col s12 m12 l12">
+                <h5 class="blue-grey-text">Reviews</h5>
+                <ul class="collapsible" data-collapsible="accordion" id="reviews">
+                    <li>
+                        <div class="collapsible-header"><i class="zmdi zmdi-comment blue-grey-text"></i>Reviewer</div>
+                        <div class="collapsible-body"><p>Review</p></div>
+                    </li>
+                </ul>
+                    </div>
+            </div>
+
+            <!-- ADD Review -->
+            <div class="row" id="add-review">
+                <div class="col s12 m12 l12">
+
+                    <ul class="collapsible" data-collapsible="accordion">
+                        <li>
+                            <div class="collapsible-header"><i class="zmdi zmdi-comment-edit"></i><h4>Add Review</h4></div>
+                            <div class="collapsible-body" style="margin:5px">
+                                <textarea class="materialize-textarea" id="new_review"></textarea>
+                                <div style="padding: 3px;">
+                                    <a href="javascript:addReview()">SEND <i class="zmdi zmdi-mail-send"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+
+
+            <!--- ---->
 
             <div class="row">
-                <form class="col s12">
-                    <div class="row">
-                        <div class="input-field col s12">
+                <div class="fixed-action-btn horizontal" style="bottom: 45px; right: 24px;">
+                    <a class="btn-floating btn-large red tooltipped" href="javascript:getBooks()"
+                       data-position="left" data-delay="50"
+                       data-tooltip="View Books">
+                        <i class="large mdi-action-view-list"></i>
+                    </a>
+                    <ul>
+                        <li><a class="btn-floating blue tooltipped" href="javascript:showAddForm()"
+                               data-position="left" data-delay="50"
+                               data-tooltip="Add Book">
+                            <i class="zmdi zmdi-edit" ></i></a></li>
+                        <li><a class="btn-floating yellow darken-1 tooltipped"
+                               data-position="left" data-delay="50"
+                               data-tooltip="View Reviews">
+                            <i class="zmdi zmdi-comment"></i></a></li>
+                        <li>
+                            <a class="btn-floating green tooltipped" data-position="left" data-delay="50"
+                               data-tooltip="Search Books">
+                            <i class="zmdi zmdi-search"></i></a></li>
+                    </ul>
+                </div>
+            </div>
 
-                            <input id="name" type="tel" class="validate">
-                            <label for="name">
-                                <i class="zmdi zmdi-local-phone"></i> Name
+            <div class="row" id="add-div">
+                <form class="col s12 ">
+                    <div class="row">
+                        <h2>Add A Book</h2>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12 circle">
+                            <i class="mdi-editor-publish prefix"></i>
+                            <input id="title" type="tel" class="validate">
+                            <label for="title">
+                                 Book title
                             </label>
                         </div>
                     </div>
                     <div class="row">
                         <div class="input-field col s12">
-
-                            <input id="phone" type="tel" class="validate">
-                            <label for="phone">
-                                <i class="zmdi zmdi-local-phone"></i> Phone
+                            <i class="zmdi zmdi-edit prefix"></i>
+                            <input id="author" type="tel" class="validate">
+                            <label for="author">
+                                 Author
                             </label>
                         </div>
                     </div>
                     <div class="row">
                         <div class="input-field col s12">
+                            <i class="zmdi zmdi-email prefix"></i>
+                            <textarea id="desc" class="materialize-textarea validate"></textarea>
 
-                            <input id="email" type="tel" class="validate">
-                            <label for="email">
-                                <i class="zmdi zmdi-email"></i> Phone
+                            <label for="desc">
+                                 Description
                             </label>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="input-field col s12">
-
-                            <input id="tableSize" type="tel" class="validate">
-                            <label for="tableSize">
-                                <i class="zmdi zmdi-local-phone"></i> Number of people
+                        <div class="input-field col s12 m6 l6">
+                            <i class="zmdi zmdi-time prefix"></i>
+                            <input id="year" type="number" class="  validate">
+                            <label for="year">
+                                 Year
+                            </label>
+                        </div>
+                        <div class="input-field col s12 m6 l6">
+                            <i class="zmdi zmdi-money prefix"></i>
+                            <input id="price" type="number" class="  validate">
+                            <label for="price">
+                                 Price
                             </label>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="input-field col s12">
-
-                            <input id="date" type="date" class="datepicker">
-
+                        <div class="input-field col s8">
+                            <i class="zmdi zmdi-account prefix"></i>
+                            <input id="isbn" type="text" class="datepicker">
+                            <label for="isbn">
+                                ISBN
+                            </label>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="input-field col s12">
-
-                            <input id="time" type="time" class="datepicker">
-
-                        </div>
+                        <div class="col s12">
+                        <a class="waves-effect waves-teal btn-flat btn-large" href="javascript:addBook()">
+                            <i class="zmdi zmdi-upload"></i> ADD
+                        </a>
+                            </div>
                     </div>
                 </form>
             </div>
-            <div class="parallax-container">
-                <div class="parallax"><img src="../assets/img/lib_2.jpeg"></div>
-            </div>
-            <div class="section white">
-                <div class="row container">
-                    <h2 class="header">Parallax</h2>
-                    <p class="grey-text text-darken-3 lighten-3">Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.</p>
                 </div>
             </div>
-            <div class="parallax-container">
-                <div class="parallax"><img src="../assets/img/library.jpg"></div>
-            </div>
 
 
-        </div>
 
 
 
@@ -135,17 +234,36 @@
             <!-- navigation panel -->
             <ul   class="side-nav">
                 <div><a href="javascript:void(0)" >Logo</a></div>
-                <li><a href="#!">First Sidebar Link</a></li>
+                <li><a href="#!"></a></li>
                 <li><a href="#!">Second Sidebar Link</a></li>
             </ul>
 
             <ul class="side-nav fixed" id="slide-out">
 
-                <li><a href="#!">First Sidebar Link</a></li>
-                <li><a href="#!">Second Sidebar Link</a></li>
+                <li>
+                    <a href="javascript:void(0)">
+                    <i class="mdi-action-credit-card"> </i>
+                        <span class="side-titles">BOOKS</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)">
+                        <i class="zmdi zmdi-book"> </i>
+                        <span class="side-titles">BOOKS</span>
+                    </a>
+                </li>
 
-                <li><a href="javascript:void(0)">Sass</a></li>
-                <li><a href="javascript:void(0)">Components</a></li>
+                <li>
+                    <a href="javascript:void(0)">
+                        <i class="zmdi zmdi-book"> </i>
+                        <span class="side-titles">BOOKS</span>
+                    </a>
+                </li>
+                <div class="container">
+                    <div id="side_image" class="col s12 m12 circle">
+                    <img src="afire.jpeg" class="">
+                    </div>
+                </div>
             </ul>
 
         </div>

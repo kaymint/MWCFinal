@@ -76,7 +76,7 @@
         <mandatory>1</mandatory>
         <data-type>varchar(200)</data-type>
       </column>
-      <column id="29" parent="5" name="desc">
+      <column id="29" parent="5" name="description">
         <mandatory>1</mandatory>
         <data-type>varchar(1000)</data-type>
       </column>

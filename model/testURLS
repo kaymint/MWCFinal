@@ -38,3 +38,6 @@ http://localhost/mobile-web/MWCFinal/model/book.php?cmd=3&user=1&bk=2&cost=23
 
 View Purchase
 http://localhost/mobile-web/MWCFinal/model/book.php?cmd=8&user=1
+
+
+SELECT * FROM mwc_books B, mwc_reviews R, mwc_book_users U WHERE B.id = R.book AND U.username = R.reviewer AND R.book = 2

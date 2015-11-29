@@ -18,9 +18,9 @@
             $str_query =  "INSERT into mwc_books SET
                    title = '$title',
                    author = '$author',
-                   desc = '$desc',
+                   description = '$desc',
                    isbn = '$isbn',
-                   year = '$year',
+                   year = $year,
                    price = $price";
 
             return $this->query($str_query);
@@ -300,7 +300,6 @@ function search_book_control(){
             $row = $obj->fetch();
             while($row){
                 echo json_encode($row);
-                echo json_last_error_msg();
                 if( $row = $obj->fetch()){
                     echo ',';
                 }
