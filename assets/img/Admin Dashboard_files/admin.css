@@ -1,0 +1,44 @@
+.nav-wrapper li a{
+    margin-left: 3px;
+
+}
+
+#side_image img{
+    width: 100%;
+    height: auto;
+}
+
+
+/*!* label focus color *!*/
+/*.input-field input[type=search]:focus + label {*/
+    /*color: #00bcd4;*/
+/*}*/
+/*!* label underline focus color *!*/
+/*.input-field input[type=text]:focus {*/
+
+/*}*/
+
+#search:focus{
+
+    border: none;
+    border-bottom: rgba(239, 239, 239, 0.63);
+    /*box-shadow: 0 1px 0 0 #000;*/
+}
+
+#search{
+    border: none;
+}
+
+
+#search-div{
+    background: #db575e;
+}
+
+#search-div:hover{
+    background: rgba(239, 239, 239, 0.63);
+    box-shadow: 0 1px 0 0 #000;
+}
+
+#search_icon{
+    font-size: 4em;
+}

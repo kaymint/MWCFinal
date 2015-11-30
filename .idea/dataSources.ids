@@ -60,253 +60,256 @@
       <column id="24" parent="4" name="email">
         <data-type>varchar(100)</data-type>
       </column>
-      <key id="25" parent="4" name="PRIMARY">
+      <column id="25" parent="4" name="phone">
+        <data-type>varchar(13)</data-type>
+      </column>
+      <key id="26" parent="4" name="PRIMARY">
         <columns>username</columns>
         <primary>1</primary>
       </key>
-      <column id="26" parent="5" name="id">
+      <column id="27" parent="5" name="id">
         <mandatory>1</mandatory>
         <data-type>int(11)</data-type>
       </column>
-      <column id="27" parent="5" name="title">
+      <column id="28" parent="5" name="title">
         <mandatory>1</mandatory>
         <data-type>varchar(150)</data-type>
       </column>
-      <column id="28" parent="5" name="author">
+      <column id="29" parent="5" name="author">
         <mandatory>1</mandatory>
         <data-type>varchar(200)</data-type>
       </column>
-      <column id="29" parent="5" name="description">
+      <column id="30" parent="5" name="description">
         <mandatory>1</mandatory>
         <data-type>varchar(1000)</data-type>
       </column>
-      <column id="30" parent="5" name="isbn">
+      <column id="31" parent="5" name="isbn">
         <mandatory>1</mandatory>
         <data-type>varchar(20)</data-type>
       </column>
-      <column id="31" parent="5" name="year">
+      <column id="32" parent="5" name="year">
         <mandatory>1</mandatory>
         <data-type>year(4)</data-type>
       </column>
-      <column id="32" parent="5" name="price">
+      <column id="33" parent="5" name="price">
         <mandatory>1</mandatory>
         <data-type>float</data-type>
       </column>
-      <column id="33" parent="5" name="genre">
+      <column id="34" parent="5" name="genre">
         <data-type>varchar(20)</data-type>
       </column>
-      <key id="34" parent="5" name="PRIMARY">
+      <key id="35" parent="5" name="PRIMARY">
         <columns>id</columns>
         <primary>1</primary>
       </key>
-      <column id="35" parent="6" name="res_id">
+      <column id="36" parent="6" name="res_id">
         <mandatory>1</mandatory>
         <data-type>int(11)</data-type>
       </column>
-      <column id="36" parent="6" name="reservation_name">
+      <column id="37" parent="6" name="reservation_name">
         <mandatory>1</mandatory>
         <data-type>varchar(100)</data-type>
       </column>
-      <column id="37" parent="6" name="number_of_people">
+      <column id="38" parent="6" name="number_of_people">
         <mandatory>1</mandatory>
         <data-type>int(11)</data-type>
       </column>
-      <column id="38" parent="6" name="time">
+      <column id="39" parent="6" name="time">
         <mandatory>1</mandatory>
         <data-type>time</data-type>
       </column>
-      <column id="39" parent="6" name="tables">
+      <column id="40" parent="6" name="tables">
         <mandatory>1</mandatory>
         <data-type>int(11)</data-type>
       </column>
-      <column id="40" parent="6" name="date">
+      <column id="41" parent="6" name="date">
         <mandatory>1</mandatory>
         <data-type>date</data-type>
       </column>
-      <column id="41" parent="6" name="phone">
+      <column id="42" parent="6" name="phone">
         <mandatory>1</mandatory>
         <data-type>varchar(14)</data-type>
       </column>
-      <column id="42" parent="6" name="email">
+      <column id="43" parent="6" name="email">
         <mandatory>1</mandatory>
         <data-type>varchar(100)</data-type>
       </column>
-      <key id="43" parent="6" name="PRIMARY">
+      <key id="44" parent="6" name="PRIMARY">
         <columns>res_id</columns>
         <primary>1</primary>
       </key>
-      <column id="44" parent="7" name="review_id">
+      <column id="45" parent="7" name="review_id">
         <mandatory>1</mandatory>
         <data-type>int(11)</data-type>
       </column>
-      <column id="45" parent="7" name="review">
+      <column id="46" parent="7" name="review">
         <mandatory>1</mandatory>
         <data-type>varchar(1000)</data-type>
       </column>
-      <column id="46" parent="7" name="book">
+      <column id="47" parent="7" name="book">
         <mandatory>1</mandatory>
         <data-type>int(11)</data-type>
       </column>
-      <column id="47" parent="7" name="date">
+      <column id="48" parent="7" name="date">
         <mandatory>1</mandatory>
         <data-type>date</data-type>
       </column>
-      <column id="48" parent="7" name="reviewer">
+      <column id="49" parent="7" name="reviewer">
         <data-type>varchar(50)</data-type>
       </column>
-      <key id="49" parent="7" name="PRIMARY">
+      <key id="50" parent="7" name="PRIMARY">
         <columns>review_id</columns>
         <primary>1</primary>
       </key>
-      <column id="50" parent="8" name="meal_id">
+      <column id="51" parent="8" name="meal_id">
         <mandatory>1</mandatory>
         <data-type>int(11)</data-type>
       </column>
-      <column id="51" parent="8" name="meal_name">
+      <column id="52" parent="8" name="meal_name">
         <mandatory>1</mandatory>
         <data-type>varchar(100)</data-type>
       </column>
-      <column id="52" parent="8" name="meal_price">
+      <column id="53" parent="8" name="meal_price">
         <mandatory>1</mandatory>
         <data-type>double(3,2)</data-type>
       </column>
-      <column id="53" parent="8" name="meal_status">
+      <column id="54" parent="8" name="meal_status">
         <mandatory>1</mandatory>
         <data-type>enum(&apos;1&apos;, &apos;0&apos;)</data-type>
       </column>
-      <key id="54" parent="8" name="PRIMARY">
+      <key id="55" parent="8" name="PRIMARY">
         <columns>meal_id</columns>
         <primary>1</primary>
       </key>
-      <column id="55" parent="9" name="order_id">
+      <column id="56" parent="9" name="order_id">
         <mandatory>1</mandatory>
         <data-type>int(11)</data-type>
       </column>
-      <column id="56" parent="9" name="meal_id">
+      <column id="57" parent="9" name="meal_id">
         <mandatory>1</mandatory>
         <data-type>int(11)</data-type>
       </column>
-      <column id="57" parent="9" name="user_id">
+      <column id="58" parent="9" name="user_id">
         <mandatory>1</mandatory>
         <data-type>int(11)</data-type>
       </column>
-      <column id="58" parent="9" name="order_date">
+      <column id="59" parent="9" name="order_date">
         <mandatory>1</mandatory>
         <data-type>datetime</data-type>
       </column>
-      <column id="59" parent="9" name="order_status">
+      <column id="60" parent="9" name="order_status">
         <mandatory>1</mandatory>
         <data-type>enum(&apos;ready&apos;, &apos;not&apos;)</data-type>
       </column>
-      <key id="60" parent="9" name="PRIMARY">
+      <key id="61" parent="9" name="PRIMARY">
         <columns>order_id</columns>
         <primary>1</primary>
       </key>
-      <column id="61" parent="10" name="user_id">
+      <column id="62" parent="10" name="user_id">
         <mandatory>1</mandatory>
         <data-type>int(11)</data-type>
       </column>
-      <column id="62" parent="10" name="username">
+      <column id="63" parent="10" name="username">
         <mandatory>1</mandatory>
         <data-type>varchar(100)</data-type>
       </column>
-      <column id="63" parent="10" name="password">
+      <column id="64" parent="10" name="password">
         <mandatory>1</mandatory>
         <data-type>varchar(250)</data-type>
       </column>
-      <column id="64" parent="10" name="user_type">
+      <column id="65" parent="10" name="user_type">
         <mandatory>1</mandatory>
         <data-type>enum(&apos;customer&apos;, &apos;cafeteria&apos;)</data-type>
       </column>
-      <column id="65" parent="10" name="user_image">
+      <column id="66" parent="10" name="user_image">
         <mandatory>1</mandatory>
         <data-type>blob</data-type>
       </column>
-      <column id="66" parent="10" name="user_balance">
+      <column id="67" parent="10" name="user_balance">
         <mandatory>1</mandatory>
         <data-type>double(4,2)</data-type>
       </column>
-      <key id="67" parent="10" name="PRIMARY">
+      <key id="68" parent="10" name="PRIMARY">
         <columns>user_id</columns>
         <primary>1</primary>
       </key>
-      <column id="68" parent="11" name="passcode">
+      <column id="69" parent="11" name="passcode">
         <mandatory>1</mandatory>
         <data-type>varchar(8)</data-type>
       </column>
-      <column id="69" parent="11" name="time">
+      <column id="70" parent="11" name="time">
         <mandatory>1</mandatory>
         <data-type>time</data-type>
       </column>
-      <column id="70" parent="12" name="rating_id">
+      <column id="71" parent="12" name="rating_id">
         <mandatory>1</mandatory>
         <data-type>int(11)</data-type>
       </column>
-      <column id="71" parent="12" name="rating">
+      <column id="72" parent="12" name="rating">
         <mandatory>1</mandatory>
         <data-type>int(11)</data-type>
       </column>
-      <column id="72" parent="12" name="comment">
+      <column id="73" parent="12" name="comment">
         <mandatory>1</mandatory>
         <data-type>varchar(200)</data-type>
       </column>
-      <column id="73" parent="12" name="date">
+      <column id="74" parent="12" name="date">
         <mandatory>1</mandatory>
         <data-type>date</data-type>
       </column>
-      <key id="74" parent="12" name="PRIMARY">
+      <key id="75" parent="12" name="PRIMARY">
         <columns>rating_id</columns>
         <primary>1</primary>
       </key>
-      <column id="75" parent="13" name="student_id">
+      <column id="76" parent="13" name="student_id">
         <mandatory>1</mandatory>
         <data-type>int(11)</data-type>
       </column>
-      <column id="76" parent="13" name="student_name">
+      <column id="77" parent="13" name="student_name">
         <mandatory>1</mandatory>
         <data-type>varchar(100)</data-type>
       </column>
-      <column id="77" parent="13" name="gpa">
+      <column id="78" parent="13" name="gpa">
         <mandatory>1</mandatory>
         <data-type>double</data-type>
       </column>
-      <column id="78" parent="13" name="major">
+      <column id="79" parent="13" name="major">
         <mandatory>1</mandatory>
         <data-type>varchar(100)</data-type>
       </column>
-      <column id="79" parent="13" name="phone_no">
+      <column id="80" parent="13" name="phone_no">
         <mandatory>1</mandatory>
         <data-type>varchar(50)</data-type>
       </column>
-      <key id="80" parent="13" name="PRIMARY">
+      <key id="81" parent="13" name="PRIMARY">
         <columns>student_id</columns>
         <primary>1</primary>
       </key>
-      <column id="81" parent="14" name="name">
+      <column id="82" parent="14" name="name">
         <mandatory>1</mandatory>
         <data-type>varchar(150)</data-type>
       </column>
-      <column id="82" parent="14" name="gpa">
+      <column id="83" parent="14" name="gpa">
         <mandatory>1</mandatory>
         <data-type>float</data-type>
       </column>
-      <column id="83" parent="14" name="school">
+      <column id="84" parent="14" name="school">
         <mandatory>1</mandatory>
         <data-type>varchar(100)</data-type>
       </column>
-      <column id="84" parent="14" name="year">
+      <column id="85" parent="14" name="year">
         <mandatory>1</mandatory>
         <data-type>int(11)</data-type>
       </column>
-      <column id="85" parent="14" name="id">
+      <column id="86" parent="14" name="id">
         <mandatory>1</mandatory>
         <data-type>int(11)</data-type>
       </column>
-      <column id="86" parent="14" name="course">
+      <column id="87" parent="14" name="course">
         <mandatory>1</mandatory>
         <data-type>varchar(40)</data-type>
       </column>
-      <key id="87" parent="14" name="PRIMARY">
+      <key id="88" parent="14" name="PRIMARY">
         <columns>id</columns>
         <primary>1</primary>
       </key>

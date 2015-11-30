@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="782637e1-ed62-489a-bfa2-cc7ce34dd197" name="schoolserver" url="http://50.63.128.135">
+        <fileTransfer host="50.63.128.135" port="21" username="kenneth-mensah@cs.ashesi.edu.gh">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

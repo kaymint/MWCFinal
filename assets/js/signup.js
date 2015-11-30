@@ -20,9 +20,10 @@ function signup(){
     var username = $('#username').val();
     var email = $('#email').val();
     var password = $('#password').val();
+    var phone = $('#phone').val();
     var theUrl="http://localhost/mobile-web/MWCFinal/model/user.php?cmd=1&user=" +username+
         "&pass=" +password+
-        "&email="+email;
+        "&email="+email+"&phone="+phone;
     var obj=sendRequest(theUrl);   //send request to the above url
     if(obj.result===1){          //check result
 

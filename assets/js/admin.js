@@ -212,7 +212,7 @@ function sendPurchase(){
         user+"&bk="+bk+"&cost="+price;
     var obj = sendRequest(theUrl);   //send request to the above url
     if (obj.result === 1) {          //check result
-        Materialize.toast('Added to Library', 4000);
+        Materialize.toast('Added to Library : '+ obj.message, 4000);
     } else {
         Materialize.toast('Failed', 4000);
     }

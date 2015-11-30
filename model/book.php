@@ -1,4 +1,5 @@
 <?php
+session_start();
 /**
  * Created by PhpStorm.
  * User: StreetHustling
@@ -212,8 +213,13 @@ function add_purchase_control(){
 
 
         if ($obj->purchase_book($book, $user, $cost)){
+            $sms = sendPurchaseNotification($_SESSION['phone'], "Your purchase Transaction has been confirmed");
+            if($sms === true){
+                echo '{"result":1,"message": "purchase added"}';
+            }else{
+                echo '{"result":1,"message": "purchase added but sms pending"}';
+            }
 
-            echo '{"result":1,"message": "purchase added"}';
         }
         else
         {
@@ -235,15 +241,6 @@ function get_book_control(){
             $row = $obj->fetch();
             while($row){
                 echo json_encode($row);
-//                echo '{';
-//                echo '"id":'.$row['id'].',';
-//                echo '"title":'.$row['title'].',';
-//                echo '"author":'.$row['author'].',';
-//                echo '"desc":'.$row['desc'].',';
-//                echo '"isbn":'.$row['isbn'].',';
-//                echo '"year":'.$row['year'].',';
-//                echo '"price":'.$row['price'].',';
-//                echo '}';
                 if( $row = $obj->fetch()){
                     echo ',';
                 }
@@ -384,6 +381,25 @@ function get_purchases_control(){
             echo '{"result":0,"message": "Unsuccessful query"}';
 
         }
+    }
+}
+
+function sendPurchaseNotification($phone, $message){
+    try{
+        require_once 'Smsgh/Api.php';
+        $auth = new BasicAuth("jokyhrvs", "volkzmqn");
+        $apiHost = new ApiHost($auth);
+        $messagingApi = new MessagingApi($apiHost);
+        $messageResponse = $messagingApi->sendQuickMessage("Book Store", "+".$phone, $message);
+        if ($messageResponse instanceof MessageResponse) {
+            //echo $messageResponse->getStatus();
+            return true;
+        } elseif ($messageResponse instanceof HttpResponse) {
+            //echo "\nServer Response Status : " . $messageResponse->getStatus();
+            return false;
+        }
+    }catch (Exception $ex) {
+        echo $ex->getTraceAsString();
     }
 }
 

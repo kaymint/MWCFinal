@@ -1,4 +1,5 @@
 <?php
+session_start();
     
     include_once 'adb.php';
 
@@ -107,7 +108,7 @@ function signup_control(){
 
             $to = $email;
             $subject = "Welcome";
-            $headers = "From: bookReviews@ashesi.edu.gh";
+            $headers = "From: kenneth.mensah@ashesi.edu.gh";
             $_SESSION['phone'] = $phone;
 
             mail($to,$subject,$msg,$headers);
