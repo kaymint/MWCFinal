@@ -7,11 +7,12 @@
         function user(){}
         
         //add new user
-        function add_user($username, $password, $email){
+        function add_user($username, $password, $email, $phone){
             $str_query =  "INSERT into mwc_book_users SET
                    username = '$username',
                    password = '$password',
-                   email = '$email'";
+                   email = '$email',
+                   phone = '$phone'";
 
             return $this->query($str_query);
         }
@@ -50,7 +51,7 @@
         }
 
         function get_user_byId($id){
-            $str_query = "SELECT * FROM se_users
+            $str_query = "SELECT * FROM mwc_book_users
                 WHERE user_id = $id";
 
             return $this->query($str_query);
@@ -90,17 +91,29 @@ if(isset($_REQUEST['cmd'])){
 
 function signup_control(){
     if( filter_input (INPUT_GET, 'user') && filter_input(INPUT_GET, 'pass')
-        && filter_input(INPUT_GET, 'email')){
+        && filter_input(INPUT_GET, 'email') && filter_input(INPUT_GET, 'phone')){
 
         $obj = new user();
         $username = sanitize_string(filter_input (INPUT_GET, 'user'));
         $password = sanitize_string(filter_input (INPUT_GET, 'pass'));
         $email = sanitize_string(filter_input(INPUT_GET, 'email'));
+        $phone = sanitize_string(filter_input(INPUT_GET, 'phone'));
 
-        if ($obj->add_user($username, $password, $email)){
+        if ($obj->add_user($username, $password, $email, $phone)){
+            $msg = "Dear, ". $username. "\n";
+            $msg.= "Thank You for joining book reviews. \n";
+            $msg.= "We are delighted you have become a part of this wonderful learning experience";
+            $msg.= "Read Right With BOOK REVIEWS!!!";
+
+            $to = $email;
+            $subject = "Welcome";
+            $headers = "From: bookReviews@ashesi.edu.gh";
+            $_SESSION['phone'] = $phone;
+
+            mail($to,$subject,$msg,$headers);
 
             echo '{"result":1,"username": "'.$username.'",
-                    "email": "'.$email.'"}';
+                    "email": "'.$email.'", "phone": "'.$phone.'"}';
         }
         else
         {
@@ -126,8 +139,10 @@ function login_control(){
             }else {
                 $username = $row['username'];
                 $email = $row['email'];
+                $_SESSION['phone'] = $row['phone'];
                 echo '{"result":1,"username": "'.$username.'",
-                    "email": "'.$username.'"}';
+                    "email": "'.$email.'"}';
+
             }
         }
         else{

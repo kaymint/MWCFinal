@@ -68,62 +68,21 @@
             </div>
 
             <div class="row" id="review-div">
-                <div class="col s12 m12 l5">
-                    <div class="card">
-                        <div class="card-image">
-                            <img src="library.jpg">
-                            <span class="card-title">Book Title</span>
-                        </div>
-                        <div class="card-content">
-                            <p>Author</p>
-                        </div>
-                        <div class="card-action">
-                            <a href="#"><i class="zmdi zmdi-money"> </i> Price</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col s12 m12 l7">
-
-                    <div class="card-panel orange-text">
-
-                      <div>Description</div>
-                        <div>ISBN</div>
-                        <div>Year</div>
-
-                    </div>
-                </div>
 
             </div>
+
+
 
             <div class="row" >
                 <div class="col s12 m12 l12">
                 <h5 class="blue-grey-text">Reviews</h5>
-                <ul class="collapsible" data-collapsible="accordion" id="reviews">
-                    <li>
-                        <div class="collapsible-header"><i class="zmdi zmdi-comment blue-grey-text"></i>Reviewer</div>
-                        <div class="collapsible-body"><p>Review</p></div>
-                    </li>
-                </ul>
-                    </div>
+                    <div id="reviews"></div>
+                </div>
             </div>
 
             <!-- ADD Review -->
-            <div class="row" id="add-review">
-                <div class="col s12 m12 l12">
-
-                    <ul class="collapsible" data-collapsible="accordion">
-                        <li>
-                            <div class="collapsible-header"><i class="zmdi zmdi-comment-edit"></i><h4>Add Review</h4></div>
-                            <div class="collapsible-body" style="margin:5px">
-                                <textarea class="materialize-textarea" id="new_review"></textarea>
-                                <div style="padding: 3px;">
-                                    <a href="javascript:addReview()">SEND <i class="zmdi zmdi-mail-send"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
+            <div class="row" >
+                <div class="col s12 m12 l12 " id="add-review">
 
                 </div>
             </div>
@@ -133,13 +92,13 @@
 
             <div class="row">
                 <div class="fixed-action-btn horizontal" style="bottom: 45px; right: 24px;">
-                    <a class="btn-floating btn-large red tooltipped" href="javascript:getBooks()"
+                    <a class="btn-floating btn-large orange tooltipped" href="javascript:getBooks()"
                        data-position="left" data-delay="50"
                        data-tooltip="View Books">
                         <i class="large mdi-action-view-list"></i>
                     </a>
                     <ul>
-                        <li><a class="btn-floating blue tooltipped" href="javascript:showAddForm()"
+                        <li><a class="btn-floating blue-grey tooltipped" href="javascript:showAddForm()"
                                data-position="left" data-delay="50"
                                data-tooltip="Add Book">
                             <i class="zmdi zmdi-edit" ></i></a></li>
@@ -148,10 +107,25 @@
                                data-tooltip="View Reviews">
                             <i class="zmdi zmdi-comment"></i></a></li>
                         <li>
-                            <a class="btn-floating green tooltipped" data-position="left" data-delay="50"
-                               data-tooltip="Search Books">
+                            <a class="btn-floating light-blue tooltipped" data-position="left" data-delay="50"
+                               data-tooltip="Search Books" href="#">
                             <i class="zmdi zmdi-search"></i></a></li>
                     </ul>
+                </div>
+            </div>
+
+            <div class="row">
+                <!-- Modal Structure -->
+                <div id="modal1" class="modal bottom-sheet">
+                    <div class="modal-content">
+                        <h4 id="mod_title">Modal Header</h4>
+                        <p id="mod_content">A bunch of text</p>
+                        <p><span class="blue-grey-text medium">$ </span> <span id="cost" class="orange-text medium"></span></p>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="" class=" modal-action modal-close waves-effect waves-green btn-flat orange-text">CANCEL</a>
+                        <a href="javascript:sendPurchase()" class=" modal-action modal-close waves-effect waves-green btn-flat blue-grey-text">BUY</a>
+                    </div>
                 </div>
             </div>
 
@@ -215,7 +189,7 @@
                     </div>
                     <div class="row">
                         <div class="col s12">
-                        <a class="waves-effect waves-teal btn-flat btn-large" href="javascript:addBook()">
+                        <a class=" col s8 m5 l2 waves-effect orange btn-flat btn-large" href="javascript:addBook()">
                             <i class="zmdi zmdi-upload"></i> ADD
                         </a>
                             </div>
@@ -224,12 +198,12 @@
             </div>
                 </div>
             </div>
+    </div>
 
 
 
 
-
-        <div class="col s12 m4 l3">
+        <div class="col s12 m4 l2">
 
             <!-- navigation panel -->
             <ul   class="side-nav">
@@ -240,30 +214,30 @@
 
             <ul class="side-nav fixed" id="slide-out">
 
+                <div id="side_image" class="col s12 m12 ">
+                    <img src="afire.jpeg" class="">
+                </div>
                 <li>
-                    <a href="javascript:void(0)">
-                    <i class="mdi-action-credit-card"> </i>
-                        <span class="side-titles">BOOKS</span>
+                    <a href="javascript:getBooks()">
+                        <i class="zmdi zmdi-book medium"> </i>
+                        <span class="side-titles orange-text">Books</span>
                     </a>
                 </li>
                 <li>
-                    <a href="javascript:void(0)">
-                        <i class="zmdi zmdi-book"> </i>
-                        <span class="side-titles">BOOKS</span>
+                    <a href="javascript:viewSales()">
+                    <i class="zmdi zmdi-archive medium"> </i>
+                        <span class="side-titles orange-text">My Archive</span>
                     </a>
                 </li>
 
+
                 <li>
                     <a href="javascript:void(0)">
-                        <i class="zmdi zmdi-book"> </i>
-                        <span class="side-titles">BOOKS</span>
+                        <i class=""> </i>
+                        <span class="side-titles"></span>
                     </a>
                 </li>
-                <div class="container">
-                    <div id="side_image" class="col s12 m12 circle">
-                    <img src="afire.jpeg" class="">
-                    </div>
-                </div>
+
             </ul>
 
         </div>
