@@ -53,7 +53,7 @@ function showBooks(obj){
         booksCard += '<div class="col s12 m6 l4">';
         booksCard += '<div class="card hoverable">';
         booksCard += '<div class="card-image waves-effect waves-block waves-light">';
-        booksCard += '<img class="activator" src="afire.jpeg">';
+        booksCard += '<img class="activator" src="book.jpg">';
         booksCard += '</div>';
         booksCard += '<div class="card-content">';
         booksCard += '<span class="card-title activator grey-text text-darken-4">' +obj.books[index].title+
@@ -124,7 +124,7 @@ function showNoReview(obj){
     bookDetails += '<div class="col s12 m12 l5">';
     bookDetails += '<div class="card">';
     bookDetails += '<div class="card-image">';
-    bookDetails += '<img src="afire.jpeg">';
+    bookDetails += '<img src="book.jpg">';
     bookDetails += '<span class="card-title ">'+obj.books[0].title+'</span>'
     bookDetails += '</div>';
     bookDetails += '<div class="card-content">';
@@ -156,7 +156,7 @@ function showDetailsBook(obj){
     bookDetails += '<div class="col s12 m12 l5">';
     bookDetails += '<div class="card">';
     bookDetails += '<div class="card-image">';
-    bookDetails += '<img src="afire.jpeg">';
+    bookDetails += '<img src="book.jpg">';
     bookDetails += '<span class="card-title ">'+obj.reviews[0].title+'</span>'
     bookDetails += '</div>';
     bookDetails += '<div class="card-content">';
@@ -336,7 +336,7 @@ function showLibrary(obj){
         booksCard += '<div class="col s12 m6 l4">';
         booksCard += '<div class="card hoverable">';
         booksCard += '<div class="card-image waves-effect waves-block waves-light">';
-        booksCard += '<img class="activator" src="afire.jpeg">';
+        booksCard += '<img class="activator" src="book.jpg">';
         booksCard += '</div>';
         booksCard += '<div class="card-content">';
         booksCard += '<span class="card-title activator grey-text text-darken-4">' +obj.purchases[index].title+

@@ -18,6 +18,10 @@
 
 /*}*/
 
+
+
+
+
 #search:focus{
 
     border: none;
@@ -31,7 +35,7 @@
 
 
 #search-div{
-    background: rgba(220, 83, 88, 0.69);
+    background: rgba(239, 163, 56, 0.69);
 }
 
 #search-div:hover{

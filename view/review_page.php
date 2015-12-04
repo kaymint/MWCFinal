@@ -20,15 +20,56 @@
 
     <link type="text/css" rel="stylesheet" href="../assets/css/admin.css">
 
+    <style>
+        #heading {
+            background-color: #4f6a77;
+        }
+
+        a{
+            color: #90caf9;
+        }
+
+
+        @media screen and (min-width: 480px) {
+            #heading {
+                background-color: #222b30;
+            }
+
+            #search-div{
+                background-color:#ef962d;
+            }
+
+
+            a{
+                color: #ef962d;
+            }
+
+        }
+
+        @media screen and (min-width: 768px) {
+            #heading {
+                background-color: #4f6a77;
+            }
+
+            a{
+                color: #394a53;
+            }
+
+            #search-div{
+                background-color: #dadcdf;
+            }
+        }
+    </style>
+
     <!--STYLESHEETS ENDED-->
 </head>
 <body id="body_page">
 
 <!-- NAVBAR -->
-<div class=" row navbar-fixed ">
-    <nav class="col s12 blue-grey">
+<div class=" row navbar-fixed">
+    <nav class="col s12" id="heading">
         <div class="nav-wrapper ">
-            <a href="javascript:void(0)" class="brand-logo center"> <span class="mdi-action-book orange-text medium"></span> Book Reviews  </a>
+            <a href="#" class="brand-logo center" accesskey="l"> <span class="mdi-action-book medium"></span> Book-Reviews  </a>
             <ul  class="right hide-on-med-and-down">
                 <li><i class="zmdi zmdi-account-circle circle"></i></li>
                 <li><span id="username"> </span></li>
@@ -53,7 +94,7 @@
     <div class="col s12 m12 l9 right">
 
         <div class="row" id="search-div">
-            <div class="col s12 container center-align">
+            <div class="col s12 container center-align" >
                 <div class="col s1">
                     <i class="zmdi zmdi-search" id="search_icon"></i></label></div>
                 <div class="col s11">
@@ -65,113 +106,6 @@
         <!-- page content  -->
         <div class="row" id="main-div">
 
-        </div>
-
-        <div class="row" id="review-div">
-
-        </div>
-
-
-
-        <div class="row" >
-            <div class="col s12 m12 l12">
-                <h5 class="blue-grey-text">Reviews</h5>
-                <div id="reviews"></div>
-            </div>
-        </div>
-
-        <!-- ADD Review -->
-        <div class="row" >
-            <div class="col s12 m12 l12 " id="add-review">
-
-            </div>
-        </div>
-
-
-        <!--- ---->
-
-        <div class="row">
-            <div class="fixed-action-btn horizontal" style="bottom: 45px; right: 24px;">
-                <a class="btn-floating btn-large orange tooltipped" href="javascript:getBooks()"
-                   data-position="left" data-delay="50"
-                   data-tooltip="View Books">
-                    <i class="large mdi-action-view-list"></i>
-                </a>
-                <ul>
-                    <li><a class="btn-floating blue-grey tooltipped" href="javascript:showAddForm()"
-                           data-position="left" data-delay="50"
-                           data-tooltip="Add Book">
-                            <i class="zmdi zmdi-edit" ></i></a></li>
-                    <li><a class="btn-floating yellow darken-1 tooltipped"
-                           data-position="left" data-delay="50"
-                           data-tooltip="View Reviews">
-                            <i class="zmdi zmdi-comment"></i></a></li>
-                    <li>
-                        <a class="btn-floating light-blue tooltipped" data-position="left" data-delay="50"
-                           data-tooltip="Search Books" href="#">
-                            <i class="zmdi zmdi-search"></i></a></li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="row">
-            <!-- Modal Structure -->
-            <div id="modal1" class="modal bottom-sheet">
-                <div class="modal-content">
-                    <h4 id="mod_title">Modal Header</h4>
-                    <p id="mod_content">A bunch of text</p>
-                    <p><span class="blue-grey-text medium">$ </span> <span id="cost" class="orange-text medium"></span></p>
-                </div>
-                <div class="modal-footer">
-                    <a href="" class=" modal-action modal-close waves-effect waves-green btn-flat orange-text">CANCEL</a>
-                    <a href="javascript:sendPurchase()" class=" modal-action modal-close waves-effect waves-green btn-flat blue-grey-text">BUY</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="row">
-
-            <div class="col s12">
-                <h5>RSS Feeds</h5>
-
-                <div >
-                    <?php
-                        require_once("magpierss/rss_fetch.inc");
-                        $url="http://topics.nytimes.com/top/features/books/bookreviews/index.html?rss=1";
-                        $rss=fetch_rss($url);
-
-                        echo "<h5> ". $rss->channel['title']."</h5><p>";
-                        echo "<div>";
-                        foreach ($rss->items as $item) {
-                            $href = $item['link'];
-                            $title = $item['title'];
-                            $description = $item['description'];
-                            echo "<div><h6><a href=".$href.">".$title."</a></h6>";
-                            echo "<p>".$description."</p></div>";
-                        }
-                        echo "</div>";
-
-
-
-
-
-                    $url="http://rss.nytimes.com/services/xml/rss/nyt/Science.xml";
-                    $rss=fetch_rss($url);
-
-                    echo "<h5> ". $rss->channel['title']."</h5><p>";
-                    echo "<div>";
-                    foreach ($rss->items as $item) {
-                        $href = $item['link'];
-                        $title = $item['title'];
-                        $description = $item['description'];
-                        echo "<div><h6><a href=".$href.">".$title."</a></h6>";
-                        echo "<br><p>".$description."</p></div>";
-                    }
-                    echo "</div>";
-                    ?>
-
-                </div>
-            </div>
         </div>
 
         <div class="row" id="add-div">
@@ -241,6 +175,118 @@
                 </div>
             </form>
         </div>
+
+        <div class="row" id="review-div">
+
+        </div>
+
+
+
+        <div class="row" >
+            <div class="col s12 m12 l12">
+                <h5 class="blue-grey-text"><span class="zmdi zmdi-comments"></span> Reviews</h5>
+                <div id="reviews"></div>
+            </div>
+        </div>
+
+        <!-- ADD Review -->
+        <div class="row" >
+            <div class="col s12 m12 l12 " id="add-review">
+
+            </div>
+        </div>
+
+
+        <!--- ---->
+
+        <div class="row">
+            <div class="fixed-action-btn horizontal" style="bottom: 45px; right: 24px;">
+                <a class="btn-floating btn-large orange tooltipped" href="javascript:getBooks()"
+                   data-position="left" data-delay="50"
+                   data-tooltip="View Books">
+                    <i class="large mdi-action-view-list"></i>
+                </a>
+                <ul>
+                    <li><a class="btn-floating blue-grey tooltipped" href="javascript:showAddForm()"
+                           data-position="left" data-delay="50"
+                           data-tooltip="Add Book">
+                            <i class="zmdi zmdi-edit" ></i></a></li>
+                    <li><a class="btn-floating yellow darken-1 tooltipped"
+                           data-position="left" data-delay="50"
+                           data-tooltip="View Reviews">
+                            <i class="zmdi zmdi-comment"></i></a></li>
+                    <li>
+                        <a class="btn-floating light-blue tooltipped" data-position="left" data-delay="50"
+                           data-tooltip="Search Books" href="#">
+                            <i class="zmdi zmdi-search"></i></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- Modal Structure -->
+            <div id="modal1" class="modal bottom-sheet">
+                <div class="modal-content">
+                    <h4 id="mod_title">Modal Header</h4>
+                    <p id="mod_content">A bunch of text</p>
+                    <p><span class="blue-grey-text medium">$ </span> <span id="cost" class="orange-text medium"></span></p>
+                </div>
+                <div class="modal-footer">
+                    <a href="" class=" modal-action modal-close waves-effect waves-green btn-flat orange-text">CANCEL</a>
+                    <a href="javascript:sendPurchase()" class=" modal-action modal-close waves-effect waves-green btn-flat blue-grey-text">BUY</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+
+            <div class="col s12 ">
+                <h5><span class="fa fa-rss orange-text show-on-medium-and-down"></span> RSS Feeds</h5>
+
+                <div class="hide-on-med-and-down">
+                    <?php
+                    require_once("magpierss/rss_fetch.inc");
+                    $url="http://libwww.freelibrary.org/rss/reviewrss.cfm";
+                    $rss=fetch_rss($url);
+
+                    echo "<h5> ". $rss->channel['title']."</h5><p>";
+                    echo "<div>";
+                    foreach ($rss->items as $item) {
+                        $href = $item['link'];
+                        $title = $item['title'];
+                        $description = $item['description'];
+                        $date = $item['dc:date'];
+                        echo "<div ><h6> <a href=".$href."><span class='fa fa-rss orange-text medium'></span> ".$title."</a></h6><span class='right'>".$date."</span></div>";
+                        echo "<p>".$description."</p>";
+                    }
+                    echo "</div>";
+                    ?>
+
+                </div>
+
+
+                <div class="show-on-medium-and-down hide-on-large-only">
+                    <?php
+                        require_once("magpierss/rss_fetch.inc");
+                    $url="http://libwww.freelibrary.org/rss/reviewrss.cfm";
+                    $rss=fetch_rss($url);
+
+                    echo "<h5> ". $rss->channel['title']."</h5>";
+                    echo "<div>";
+                    foreach ($rss->items as $item) {
+                        $href = $item['link'];
+                        $title = $item['title'];
+                        $description = $item['description'];
+                        echo "<div><h6><a href=".$href.">".$title."</a></h6></div>";
+                    }
+                    echo "</div>";
+                    ?>
+
+                </div>
+            </div>
+        </div>
+
+
     </div>
 </div>
 

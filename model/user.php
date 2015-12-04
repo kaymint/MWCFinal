@@ -157,6 +157,26 @@ function login_control(){
 }
 
 
+function sendPurchaseNotification($phone, $message){
+    try{
+        require_once 'Smsgh/Api.php';
+        $auth = new BasicAuth("jokyhrvs", "volkzmqn");
+        $apiHost = new ApiHost($auth);
+        $messagingApi = new MessagingApi($apiHost);
+        $messageResponse = $messagingApi->sendQuickMessage("Book Store", "+".$phone, $message);
+        if ($messageResponse instanceof MessageResponse) {
+            //echo $messageResponse->getStatus();
+            return true;
+        } elseif ($messageResponse instanceof HttpResponse) {
+            //echo "\nServer Response Status : " . $messageResponse->getStatus();
+            return false;
+        }
+    }catch (Exception $ex) {
+        echo $ex->getTraceAsString();
+    }
+}
+
+
 /**
  * sanitize input from url
  * @param $val

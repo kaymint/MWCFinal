@@ -12,7 +12,7 @@
       <paths name="schoolserver">
         <serverdata>
           <mappings>
-            <mapping deploy="/pos" local="$PROJECT_DIR$" web="/" />
+            <mapping deploy="/pos/view" local="$PROJECT_DIR$/view" web="/" />
           </mappings>
         </serverdata>
       </paths>
