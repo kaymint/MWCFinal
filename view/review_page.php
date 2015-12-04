@@ -140,7 +140,7 @@
                         $url="http://topics.nytimes.com/top/features/books/bookreviews/index.html?rss=1";
                         $rss=fetch_rss($url);
 
-                        echo "<h1> ". $rss->channel['title']."</h1><p>";
+                        echo "<h5> ". $rss->channel['title']."</h5><p>";
                         echo "<div>";
                         foreach ($rss->items as $item) {
                             $href = $item['link'];
@@ -150,6 +150,24 @@
                             echo "<p>".$description."</p></div>";
                         }
                         echo "</div>";
+
+
+
+
+
+                    $url="http://rss.nytimes.com/services/xml/rss/nyt/Science.xml";
+                    $rss=fetch_rss($url);
+
+                    echo "<h5> ". $rss->channel['title']."</h5><p>";
+                    echo "<div>";
+                    foreach ($rss->items as $item) {
+                        $href = $item['link'];
+                        $title = $item['title'];
+                        $description = $item['description'];
+                        echo "<div><h6><a href=".$href.">".$title."</a></h6>";
+                        echo "<br><p>".$description."</p></div>";
+                    }
+                    echo "</div>";
                     ?>
 
                 </div>
